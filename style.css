@@ -77,7 +77,10 @@ header{
     gap: 200px;
 }
 section{
-    height: 90vh;
+    height: 100vh;
+
+}
+.first-layer{
     display: flex;
     justify-content: end;
     align-items: center;
@@ -116,7 +119,7 @@ section{
 }
 .third-flex .arrow{
     width: 4px;
-    height: 100px;
+    height: 50px;
     background-color: #ddd;
 }
 .box-contain{
@@ -145,6 +148,11 @@ section{
 .box-details p{
     font-size: .9rem;
 }
+.box:hover{
+    background-color: #78BE21;
+    color: white;
+    transition: .1ms ease-in-out;
+}
 footer{
     padding: 20px 0;
     display: flex;
@@ -162,8 +170,8 @@ footer .livewall{
     align-items: center;
     gap: 20px;
 }
-.social-meida .expand{
-    padding: 0 25px;
+.social-meida .expand p{
+    padding: 10px 20px;
     background-color: red;
     color: white;
     border-radius: 30px 30px 30px 30px;
@@ -179,10 +187,246 @@ footer .livewall{
     gap: 20px;
 }
 
+/* second section  */
+.herosection{
+    background-image: url('https://images.pexels.com/photos/161688/medical-tablets-pills-drug-161688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: cover;
+    background-size: cover;
+}
+section .warraper{
+    margin-left: 30px;
+    padding: 10px 10px;
+    width: 700px;
+}
+.herosection{
+    display: flex;
+    align-items: center;
+}
+.warraper{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;;
+}
+.warraper .title{
+    font-size: 2rem;
+}
+.warraper .description{
+    margin-top: 50px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* product  */
+.product-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    width: 100%; 
+}
+.product-name .proTilte{
+    font-size: 32px;
+    font-weight: 700;
+}
+.product-name p{
+    text-align: center;
+    letter-spacing: .7px;
+}
+.product-image{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.probox{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.probox img{
+    width: 100px;
+}
+/* heal  */
+.healyourself{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.herotag{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.herotag .line{
+
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+}
+.herotag .hertag {
+    width: 300px;
+    height: 27px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: -70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tagline-heal{
+    margin-top: 20px;
+}
+input{
+    padding: 10px 20px;
+    width: 300px;
+}
+
+/* unani update  */
+.unani-update{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.update{
+    width: 100%;
+    position: relative;
+}
+.update .line{
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    
+}
+.update-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}.unani-update .active{
+    border-bottom: 3px solid #000;
+    padding: 10px 0;
+}
+.news{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+}
+.news .active1{
+    border-bottom: 3px solid #000;
+}
+.box-container{
+    display: flex;
+    flex: 1;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 550vh;
+}
+.news >div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50% 50%;
+    background-color: gray;
+}
+.border{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.boxssmall{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+.boxssmall .img{
+    flex: 4;
+}
+.boxssmall .img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.boxssmall p {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.boxssmall .desc {
+    padding: 15px 4px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    gap: 12px;
+    color: white;
+}
+.date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.date h1{
+    font-size: 1.9rem;
+}
+.date p{
+    font-size: .9rem;
+}
+.desc-sm{
+    font-size: .9rem;
+}
 @media screen and (max-width: 750px) {
+    .third-flex{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .box-container{
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .product-image{
+        flex-direction: column;
+    }
     .sitemap{
     flex-direction: column;
 
+    }
+    section .warraper {
+        position: relative;
+        margin-left: 0px;
+        padding: 4px 0px;
+    }
+    .box{
+        flex-direction: column;
+    }
+
+    .box .arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .container{
     margin-right: 0;
